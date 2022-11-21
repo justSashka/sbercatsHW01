@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-button_container">
+        <button class="header-button_addCat">Add Kitty</button>
+      </div>
+    </header>
+    <div data-wr class="wrapper"></div>
+    <div class="modal-addCat-container hidden">
+      <div class="modal-form-container">
+        <form action="" class="modal-form" name="add_cat">
+          <input
+            class="input catId"
+            type="number"
+            required
+            name="id"
+            id=""
+            placeholder="Kitty id"
+          />
+          <input
+            class="input catName"
+            type="text"
+            required
+            name="name"
+            id=""
+            placeholder="Kitty name"
+          />
+          <input class="input catRate" type="range" name="rate" id="" min="0" max="10" value="5" />
+
+          <label for="catfavorite"
+            >Favorite kitty<input class="input catFavorite" type="checkbox" name="favourite" id=""
+          /></label>
+          <input type="text" name="description" id="" placeholder="Kitty description" />
+          <input type="text" name="img_link" id="" placeholder="Img link" />
+          <button class="modal-submit" type="submit">Submit</button>
+          <button class="modal-close" type="reset">Close</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal-showCat hidden"></div>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
